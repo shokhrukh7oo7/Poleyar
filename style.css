@@ -860,6 +860,9 @@ input:focus {
     .mobile-accordion-wrapper {
     display: block;
   }
+  .main-container-wrapper .content-wrapper {
+    gap: 20px;
+  }
 }
 @media (max-width: 375px) {
   .container {
