@@ -723,19 +723,19 @@ input:focus {
   position: relative;
 }
 .contact-us-wrapper .line {
-    border-bottom: 1px solid var(--white-green);
-    position: absolute;
-    top: 50%;
-    width: 100%;
+  border-bottom: 1px solid var(--white-green);
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 .contact-us-wrapper p {
-    background: #fff;
-    text-align: center;
-    z-index: 1;
-    padding: 10px 20px;
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
+  background: #fff;
+  text-align: center;
+  z-index: 1;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .overlay {
   position: fixed;
@@ -788,7 +788,7 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    margin-top: 82px;
+    margin-top: clamp(20px, 6vw, 82px);
   }
   .main-container-wrapper
     .content-wrapper
