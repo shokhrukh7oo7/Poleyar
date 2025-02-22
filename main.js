@@ -35,36 +35,41 @@ document.addEventListener("DOMContentLoaded", function () {
 //   ===================================================================================================
 
 // popup modal js start
-const downloadBtn = document.querySelectorAll(".download-btn");
+const downloadBtns = document.querySelectorAll(".download-btn");
 const popupModal = document.getElementById("popup-modal");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overlay");
 
-// add classList hidden
-const addHidden = () => {
-  popupModal.classList.add("hidden");
-  overlay.classList.add("hidden");
-};
-
-// remove classList hidden
-const removeHidden = () => {
-  popupModal.classList.remove("hidden");
+// Функция для показа окна
+const showModal = () => {
+  popupModal.classList.remove("hidden"); // Убираем класс hidden
   overlay.classList.remove("hidden");
+  setTimeout(() => {
+    popupModal.classList.add("active"); // Добавляем анимацию
+    overlay.classList.add("active");
+  }, 10); // Короткая задержка для плавности
 };
 
-downloadBtn.forEach((button) => {
-  button.addEventListener("click", () => {
-    removeHidden();
-  });
+// Функция для скрытия окна
+const hideModal = () => {
+  popupModal.classList.remove("active");
+  overlay.classList.remove("active");
+  setTimeout(() => {
+    popupModal.classList.add("hidden"); // После анимации скрываем окно
+    overlay.classList.add("hidden");
+  }, 300); // Должно совпадать с CSS-анимацией
+};
+
+downloadBtns.forEach((button) => {
+  button.addEventListener("click", showModal);
 });
 
-closeBtn.addEventListener("click", addHidden);
-
-overlay.addEventListener("click", addHidden);
+closeBtn.addEventListener("click", hideModal);
+overlay.addEventListener("click", hideModal);
 
 document.addEventListener("keydown", (e) => {
-  if (e.key == "Escape") {
-    addHidden();
+  if (e.key === "Escape") {
+    hideModal();
   }
 });
 
