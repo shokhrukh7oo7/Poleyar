@@ -1012,6 +1012,9 @@ input:focus {
     .mail-btn {
     padding: 8px 20px 8px 24px;
   }
+  .main-container-wrapper .content-wrapper {
+    gap: 14px;
+}
 }
 @media (max-width: 450px) {
   .popup-modal {
@@ -1038,8 +1041,5 @@ input:focus {
     .content-left-wrapper
     .content-left-header {
     margin-bottom: 20px;
-  }
-  .main-container-wrapper .content-wrapper {
-    margin-top: 24px;
   }
 }
