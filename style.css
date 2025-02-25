@@ -1,7 +1,7 @@
 :root {
   --green: #005c52;
   --white: #ffffff;
-  --light-green: #73a6a0;
+  --light-green: #2e7971;
   --white-green: rgba(230, 239, 238, 1);
 }
 
@@ -182,7 +182,7 @@ input:focus {
   .content-left-wrapper
   .content-left-header {
   color: var(--white);
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 700;
   margin-bottom: 32px;
 }
@@ -190,7 +190,7 @@ input:focus {
   .content-wrapper
   .content-left-wrapper
   .content-left-description-wrapper {
-  height: 475px;
+  /* height: 475px; */
   overflow-y: scroll;
 }
 .content-left-description-wrapper::-webkit-scrollbar {
@@ -240,10 +240,29 @@ input:focus {
   font-size: 13px;
   font-weight: 500;
   border-radius: 100px;
-  padding: clamp(8px, 0.9vw, 14px) 20px clamp(8px, 0.9vw, 14px) 24px;
+  padding: 13px 20px 13px 24px;
   text-transform: uppercase;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease-in-out;
 }
+.main-container-wrapper
+  .content-wrapper
+  .content-left-wrapper
+  .mobile-download-btn-wrapper
+  .download-btn:hover {
+  background-color: var(--light-green);
+}
+.main-container-wrapper
+  .content-wrapper
+  .content-left-wrapper
+  .mobile-download-btn-wrapper
+  .download-btn img {
+    height: 20px;
+  }
 .main-container-wrapper
   .content-wrapper
   .content-left-wrapper
@@ -277,6 +296,15 @@ input:focus {
   .blur-btn-wrapper {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 100px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+}
+.main-container-wrapper
+  .content-wrapper
+  .content-right-wrapper
+  .content-right-header
+  .blur-btn-wrapper:hover {
+  background: rgba(239, 236, 236, 0.3);
   backdrop-filter: blur(5px);
 }
 .main-container-wrapper
@@ -312,7 +340,7 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 50px;
 }
 .main-container-wrapper
@@ -563,6 +591,18 @@ input:focus {
   backdrop-filter: blur(20px);
   border-radius: 100px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.main-container-wrapper
+  .content-wrapper
+  .content-right-wrapper
+  .mobile-accordion-wrapper
+  .accordion
+  .accordion-item
+  .accordion-body
+  .blur-btn-wrapper:hover {
+  background: rgba(239, 236, 236, 0.3);
+  backdrop-filter: blur(5px);
 }
 .main-container-wrapper
   .content-wrapper
@@ -662,10 +702,10 @@ input:focus {
   transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
 }
 .popup-modal.active {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
 .popup-modal .popup-modal-header {
   display: flex;
   justify-content: space-between;
@@ -771,9 +811,9 @@ input:focus {
   /* backdrop-filter: blur(8px); */
 }
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
-  }
+  opacity: 1;
+  visibility: visible;
+}
 .form {
   width: 100%;
 }
@@ -802,6 +842,15 @@ input:focus {
     .content-right-info-wrapper
     .item:nth-child(2) {
     padding-left: 10px;
+  }
+  .main-container-wrapper .content-wrapper {
+    margin-top: 82px;
+  }
+  .main-container-wrapper
+    .content-wrapper
+    .content-left-wrapper
+    .content-left-description-wrapper {
+    height: 325px;
   }
 }
 @media (max-width: 1200px) {
@@ -837,7 +886,7 @@ input:focus {
     .content-wrapper
     .content-left-wrapper
     .content-left-header {
-    font-size: 28px;
+    font-size: 23px;
   }
   .main-container-wrapper
     .content-wrapper
@@ -863,7 +912,7 @@ input:focus {
     .content-left-wrapper
     .content-left-description-wrapper {
     margin-bottom: 20px;
-    height: 355px;
+    height: 310px;
   }
   .main-container-wrapper
     .content-wrapper
@@ -888,6 +937,14 @@ input:focus {
   }
   .main-container-wrapper .content-wrapper {
     gap: 20px;
+  }
+  .popup-modal {
+    max-width: 410px;
+  }
+}
+@media (max-width: 450px) {
+  .popup-modal {
+    max-width: 330px;
   }
 }
 @media (max-width: 375px) {
