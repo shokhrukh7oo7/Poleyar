@@ -260,9 +260,10 @@ input:focus {
   .content-wrapper
   .content-left-wrapper
   .mobile-download-btn-wrapper
-  .download-btn img {
-    height: 20px;
-  }
+  .download-btn
+  img {
+  height: 20px;
+}
 .main-container-wrapper
   .content-wrapper
   .content-left-wrapper
@@ -676,6 +677,16 @@ input:focus {
   .content-right-wrapper
   .mobile-accordion-wrapper
   .accordion
+  .accordion-item:last-of-type {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.main-container-wrapper
+  .content-wrapper
+  .content-right-wrapper
+  .mobile-accordion-wrapper
+  .accordion
   .accordion-item
   .accordion-body
   .partner-wrapper
@@ -945,6 +956,12 @@ input:focus {
 @media (max-width: 450px) {
   .popup-modal {
     max-width: 330px;
+  }
+  .main-container-wrapper
+    .content-wrapper
+    .content-left-wrapper
+    .content-left-description-wrapper {
+    height: 265px;
   }
 }
 @media (max-width: 375px) {
