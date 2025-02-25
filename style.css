@@ -1014,9 +1014,12 @@ input:focus {
   }
   .main-container-wrapper .content-wrapper {
     gap: 14px;
-}
+  }
 }
 @media (max-width: 450px) {
+  .container {
+    gap: 24px;
+  }
   .popup-modal {
     max-width: 330px;
   }
