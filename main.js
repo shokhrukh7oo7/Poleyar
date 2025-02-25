@@ -42,12 +42,12 @@ const overlay = document.getElementById("overlay");
 
 // Функция для показа окна
 const showModal = () => {
-  popupModal.classList.remove("hidden"); // Убираем класс hidden
+  popupModal.classList.remove("hidden"); 
   overlay.classList.remove("hidden");
   setTimeout(() => {
-    popupModal.classList.add("active"); // Добавляем анимацию
+    popupModal.classList.add("active");
     overlay.classList.add("active");
-  }, 10); // Короткая задержка для плавности
+  }, 10); 
 };
 
 // Функция для скрытия окна
@@ -55,9 +55,9 @@ const hideModal = () => {
   popupModal.classList.remove("active");
   overlay.classList.remove("active");
   setTimeout(() => {
-    popupModal.classList.add("hidden"); // После анимации скрываем окно
+    popupModal.classList.add("hidden"); 
     overlay.classList.add("hidden");
-  }, 300); // Должно совпадать с CSS-анимацией
+  }, 300); 
 };
 
 downloadBtns.forEach((button) => {
