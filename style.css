@@ -253,6 +253,13 @@ input:focus {
   .content-wrapper
   .content-left-wrapper
   .mobile-download-btn-wrapper
+  .download-btn:hover img {
+    animation: move-down-up 0.4s ease-in-out;
+  }
+.main-container-wrapper
+  .content-wrapper
+  .content-left-wrapper
+  .mobile-download-btn-wrapper
   .download-btn:hover {
   background-color: var(--light-green);
 }
