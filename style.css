@@ -854,6 +854,18 @@ input:focus {
 .hidden {
   display: none;
 }
+
+
+.fade-in-observer {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 2s, transform 1s;
+}
+
+.fade-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* responsive media */
 @media (max-width: 1700px) {
   .main-container-wrapper

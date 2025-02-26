@@ -99,3 +99,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+//   ===================================================================================================
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fade-in-observer");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in-active");
+      }
+    });
+  });
+
+  elements.forEach((el) => observer.observe(el));
+});
