@@ -30,6 +30,13 @@
     />
     <!-- google fonts end -->
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -263,29 +270,37 @@
         <p>Чтобы скачать презентацию введите пароль</p>
 
         <div class="form-wrapper">
-          <form class="form">
-            <div class="form-group">
-              <label for="password">Пароль</label>
+          <form class="form" id="form-pdf">
+            <div class="form-group" id="group-input">
+              <div class="label-wrapper">
+                <label for="password">Пароль</label>
+                <p class="error" id="error-message">Неверный пароль</p>
+              </div>
               <div class="main-password">
                 <input
                   type="password"
                   class="form-control input-password"
                   aria-label="password"
                   name="password"
-                  id="password"
+                  id="password-pdf"
                 />
-                <a href="JavaScript:void(0);" class="icon-view">
+                <a
+                  href="JavaScript:void(0);"
+                  class="icon-view"
+                  id="toggle-password"
+                >
                   <!-- <img src="/img/eye.svg" alt="image" /> -->
                   <i class="fa fa-eye"></i>
                 </a>
               </div>
             </div>
+            <button type="submit" class="btn download-btn" id="form-download-btn">
+              Скачать презентацию
+              <img src="/img/download.svg" alt="image" id="download-icon" />
+            </button>
           </form>
 
-          <button class="btn download-btn" id="download-btn">
-            Скачать презентацию
-            <img src="/img/download.svg" alt="image" id="download-icon" />
-          </button>
+
 
           <div class="contact-us-wrapper">
             <div class="line"></div>
@@ -304,6 +319,7 @@
 
     <script src="main.js"></script>
     <!-- bootstrap custom js -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

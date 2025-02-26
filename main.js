@@ -39,6 +39,7 @@ const downloadBtns = document.querySelectorAll(".download-btn");
 const popupModal = document.getElementById("popup-modal");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overlay");
+const password = "test";
 
 // Функция для показа окна
 const showModal = () => {
@@ -112,4 +113,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   elements.forEach((el) => observer.observe(el));
+});
+//   ===================================================================================================
+// download btn password in popup modal
+
+$("#form-pdf").submit(function (e) {
+  e.preventDefault();
+  let pass = $("#password-pdf").val();
+  if (pass === password) {
+    $("#form-download-btn").html('Скачено');
+    // $("#group-input").css("display", "none");
+    $("#password-pdf").removeClass('border-red');
+    $("#error-message").css("display", "none");
+    var link = document.createElement("a");
+    link.href = "/Taras_Resume.pdf";
+    link.download = "/Taras_Resume.pdf";
+    link.dispatchEvent(new MouseEvent("click"));
+  } else {
+    $("#error-message").css("display", "block");
+    $("#password-pdf").addClass('border-red');
+  }
 });
