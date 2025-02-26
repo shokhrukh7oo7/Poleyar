@@ -51,8 +51,8 @@ input:focus {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  gap: 145px;
+  justify-content: space-between;
+  gap: 135px;
 }
 
 .main-container-wrapper {
@@ -85,7 +85,7 @@ input:focus {
   font-size: 14px;
   font-weight: 500;
   border-radius: 100px;
-  padding: 17px 20px 17px 24px;
+  padding: 14px 20px 14px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,10 +105,7 @@ input:focus {
   border-color: transparent;
 }
 .main-container-wrapper .logo-wrapper .download-btn-wrapper .download-btn img {
-  position: relative;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  height: 20px;
-  padding-bottom: 2px;
 }
 .main-container-wrapper
   .logo-wrapper
@@ -214,7 +211,7 @@ input:focus {
   .content-left-title {
   margin-bottom: 20px;
   color: var(--white);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   padding-right: 10px;
 }
@@ -348,7 +345,7 @@ input:focus {
   .content-right-info-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 24px;
@@ -858,9 +855,18 @@ input:focus {
   display: none;
 }
 /* responsive media */
+@media (max-width: 1700px) {
+  .main-container-wrapper
+    .content-wrapper
+    .content-left-wrapper
+    .content-left-description-wrapper
+    .content-left-title {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1600px) {
   .container {
-    gap: 100px;
+    padding: 60px 100px 70px;
   }
 }
 @media (max-width: 1540px) {
@@ -875,14 +881,14 @@ input:focus {
     .content-left-wrapper
     .content-left-description-wrapper
     .content-left-title {
-    font-size: 15.5px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 1440px) {
   .container {
     padding: 50px;
-    gap: 150px;
+    /* gap: 150px; */
   }
   .main-container-wrapper
     .content-wrapper
