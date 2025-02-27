@@ -48,7 +48,8 @@ input:focus {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 70px 100px 50px;
+  /* padding: 70px 100px 50px; */
+  padding: 50px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
