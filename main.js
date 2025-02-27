@@ -127,8 +127,8 @@ $("#form-pdf").submit(function (e) {
     $("#error-message").css("display", "none");
     $("#password-pdf").val(""); // Очистка инпута
     var link = document.createElement("a");
-    link.href = "/Taras_Resume.pdf";
-    link.download = "/Taras_Resume.pdf";
+    link.href = "/Полеяр Агро Молекулы-komprimiert.pdf";
+    link.download = "/Полеяр Агро Молекулы-komprimiert.pdf";
     link.dispatchEvent(new MouseEvent("click"));
   } else {
     $("#error-message").css("display", "block");
