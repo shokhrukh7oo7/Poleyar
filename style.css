@@ -56,6 +56,10 @@ input:focus {
   /* gap: 195px; */
 }
 
+#content-box {
+  visibility: none;
+}
+
 .main-container-wrapper {
   background-image: url("/img/banner.png");
   background-position: center;

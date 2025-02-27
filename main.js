@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //   ===================================================================================================
 document.addEventListener("DOMContentLoaded", function () {
-  gsap.from("#content-wrapper", {
-    opacity: 0,
-    scale: 0.99, // Смещение вниз
-    duration: 0.3, // Длительность анимации
-    ease: "power3.inOut" // Плавное появление
+  gsap.set("#content-box", { visibility: "visible" }); // Делаем контент видимым
+  gsap.from("#content-box", {
+    scale: 0.8, // Появление сдвигом вверх
+    duration: 1.2,
+    ease: "power3.out"
   });
 });
 //   ===================================================================================================
