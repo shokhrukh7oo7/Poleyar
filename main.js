@@ -125,6 +125,7 @@ $("#form-pdf").submit(function (e) {
     // $("#group-input").css("display", "none");
     $("#password-pdf").removeClass('border-red');
     $("#error-message").css("display", "none");
+    $("#password-pdf").val(""); // Очистка инпута
     var link = document.createElement("a");
     link.href = "/Taras_Resume.pdf";
     link.download = "/Taras_Resume.pdf";
