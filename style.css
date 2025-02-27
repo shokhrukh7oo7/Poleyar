@@ -48,8 +48,8 @@ input:focus {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  /* padding: 70px 100px 50px; */
-  padding: 50px;
+  padding: 70px 100px 50px;
+  /* padding: 50px; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -307,7 +307,7 @@ input:focus {
   .content-right-wrapper
   .content-right-header
   h4 {
-  font-size: 17px;
+  font-size: 16px;
   color: var(--white);
   font-weight: 700;
   margin: 0;
@@ -391,7 +391,7 @@ input:focus {
   .item
   h2 {
   color: var(--white);
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 700;
   margin: 0;
 }
@@ -948,6 +948,7 @@ input:focus {
 @media (max-width: 1440px) {
   .container {
     padding: 50px;
+    gap: 40px;
     /* gap: 150px; */
   }
   .main-container-wrapper
@@ -961,20 +962,64 @@ input:focus {
     .content-wrapper
     .content-left-wrapper
     .content-left-description-wrapper {
-    height: 325px;
+    /* height: 300px; */
+    height: 150px;
   }
   .main-container-wrapper
     .content-wrapper
     .content-left-wrapper
     .content-left-header {
-    font-size: 37px;
+    font-size: 32px;
   }
   .main-container-wrapper
     .content-wrapper
     .content-left-wrapper
     .content-left-description-wrapper
     .content-left-title {
-    font-size: 17px;
+    font-size: 16px;
+  }
+  .main-container-wrapper
+    .content-wrapper
+    .content-right-wrapper
+    .content-right-info-wrapper
+    .item
+    h2 {
+    font-size: 32px;
+  }
+  .main-container-wrapper
+    .content-wrapper
+    .content-right-wrapper
+    .content-right-info-wrapper
+    .item
+    p {
+    font-size: 15px;
+  }
+  .main-container-wrapper
+    .content-wrapper
+    .content-right-wrapper
+    .content-right-partners-wrapper
+    .items-wrapper
+    .item
+    img {
+    width: 77px;
+  }
+  .main-container-wrapper
+    .content-wrapper
+    .content-right-wrapper
+    .content-right-partners-wrapper {
+    gap: 10px;
+    padding-top: 14px;
+  }
+  .main-container-wrapper
+    .content-wrapper
+    .content-right-wrapper
+    .content-right-info-wrapper {
+    gap: 10px;
+    padding-bottom: 14px;
+  }
+  .main-container-wrapper .content-wrapper .content-right-header {
+    gap: 10px;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 1200px) {
