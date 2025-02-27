@@ -54,7 +54,6 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* gap: 195px; */
 }
 
 #content-box {
