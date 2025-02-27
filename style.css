@@ -887,7 +887,7 @@ input:focus {
   display: none;
 }
 
-.fade-in-observer {
+/* .fade-in-observer {
   opacity: 0;
   transform: translateY(0px);
   transition: opacity 0.5s, transform 0.5s;
@@ -896,7 +896,7 @@ input:focus {
 .fade-in-active {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 .content-box {
   display: flex;
   flex-direction: column;

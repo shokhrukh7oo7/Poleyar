@@ -115,6 +115,15 @@ document.addEventListener("DOMContentLoaded", () => {
   elements.forEach((el) => observer.observe(el));
 });
 //   ===================================================================================================
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.from("#content-wrapper", {
+    opacity: 0,
+    scale: 0.99, // Смещение вниз
+    duration: 0.3, // Длительность анимации
+    ease: "power3.inOut" // Плавное появление
+  });
+});
+//   ===================================================================================================
 // download btn password in popup modal
 
 $("#form-pdf").submit(function (e) {
