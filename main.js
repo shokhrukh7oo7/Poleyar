@@ -39,7 +39,7 @@ const downloadBtns = document.querySelectorAll(".download-btn");
 const popupModal = document.getElementById("popup-modal");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overlay");
-const password = "test";
+const password = "PoleyarPass";
 
 // Функция для показа окна
 const showModal = () => {
