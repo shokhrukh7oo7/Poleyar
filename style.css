@@ -54,6 +54,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* gap: 195px; */
 }
 
 #content-box {
@@ -152,6 +153,7 @@ input:focus {
   color: var(--white);
   font-weight: 500;
   padding: 16px 20px 16px 24px;
+  cursor: unset;
 }
 
 .main-container-wrapper
@@ -227,7 +229,7 @@ input:focus {
   .content-left-title {
   margin-bottom: 20px;
   color: var(--white);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   padding-right: 10px;
 }
@@ -812,6 +814,10 @@ input:focus {
   color: var(--green);
   padding: 17px 20px 17px 24px;
   border-radius: 100px;
+  cursor: unset;
+}
+.popup-modal .popup-modal-body .form-wrapper .mail-btn:active {
+  border-color: transparent;
 }
 .form-group .label-wrapper {
   display: flex;
@@ -920,7 +926,7 @@ input:focus {
     .content-left-wrapper
     .content-left-description-wrapper
     .content-left-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1600px) {
@@ -940,15 +946,15 @@ input:focus {
     .content-left-wrapper
     .content-left-description-wrapper
     .content-left-title {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
 @media (max-width: 1440px) {
   .container {
-    padding: 50px;
+    /* padding: 50px; */
+    padding: 50px 50px 10px;
     gap: 40px;
-    /* gap: 150px; */
   }
   .main-container-wrapper
     .content-wrapper
@@ -961,8 +967,7 @@ input:focus {
     .content-wrapper
     .content-left-wrapper
     .content-left-description-wrapper {
-    /* height: 300px; */
-    height: 150px;
+    height: 300px;
   }
   .main-container-wrapper
     .content-wrapper

@@ -39,7 +39,7 @@ const downloadBtns = document.querySelectorAll(".download-btn");
 const popupModal = document.getElementById("popup-modal");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overlay");
-const password = "PoleyarPass";
+const password = "poleyarpass";
 
 // Функция для показа окна
 const showModal = () => {
@@ -123,6 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out"
   });
 });
+
+
 //   ===================================================================================================
 // download btn password in popup modal
 
@@ -130,9 +132,9 @@ $("#form-pdf").submit(function (e) {
   e.preventDefault();
   let pass = $("#password-pdf").val();
   if (pass === password) {
-    $("#form-download-btn").html('Скачено');
+    $("#form-download-btn").html("Скачано");
     // $("#group-input").css("display", "none");
-    $("#password-pdf").removeClass('border-red');
+    $("#password-pdf").removeClass("border-red");
     $("#error-message").css("display", "none");
     $("#password-pdf").val(""); // Очистка инпута
     var link = document.createElement("a");
@@ -141,6 +143,6 @@ $("#form-pdf").submit(function (e) {
     link.dispatchEvent(new MouseEvent("click"));
   } else {
     $("#error-message").css("display", "block");
-    $("#password-pdf").addClass('border-red');
+    $("#password-pdf").addClass("border-red");
   }
 });
