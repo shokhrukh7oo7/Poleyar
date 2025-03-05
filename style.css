@@ -48,7 +48,7 @@ input:focus {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 70px 100px 50px;
+  padding: 50px 50px 50px;
   /* padding: 50px; */
   min-height: 100vh;
   display: flex;
@@ -552,7 +552,7 @@ input:focus {
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
-  padding: 16px 0;
+  padding: 20px 0;
 }
 .main-container-wrapper
   .content-wrapper
@@ -931,7 +931,7 @@ input:focus {
 }
 @media (max-width: 1600px) {
   .container {
-    padding: 60px 100px 70px;
+    padding: 50px 50px;
   }
 }
 @media (max-width: 1540px) {
@@ -1116,6 +1116,7 @@ input:focus {
     .content-right-wrapper
     .mobile-accordion-wrapper {
     display: block;
+    margin-top: 15px;
   }
   .popup-modal {
     max-width: 410px;
