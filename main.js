@@ -1,45 +1,9 @@
-// JS - Секция текст при уменьшении экрана меньше 1400px.
-document.addEventListener("DOMContentLoaded", function () {
-  function updateText() {
-    const items = document.querySelectorAll(".items-wrapper .item p");
-    const shortNames = [
-      "РГАУ-МСХА им. К. А. Тимирязева",
-      "ДВНИИСХ",
-      "ПСПбГМУ им. И. П. Павлова",
-      "МГУ им. М. В. Ломоносова",
-    ];
-    const fullNames = [
-      "Московская сельскохозяйственная академия имени К. А. Тимирязева",
-      "Дальневосточный научно-исследовательский институт сельского хозяйства",
-      "Первый Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова",
-      "Московский государственный университет имени М.В.Ломоносова",
-    ];
-
-    items.forEach((item, index) => {
-      if (
-        (window.innerWidth < 1400 && window.innerWidth >= 1200) ||
-        window.innerWidth < 768
-      ) {
-        item.textContent = shortNames[index]; // Показываем короткие названия
-      } else {
-        item.textContent = fullNames[index]; // Показываем полные названия
-      }
-    });
-  }
-
-  // Запуск при загрузке и при изменении размера экрана
-  updateText();
-  window.addEventListener("resize", updateText);
-});
-
-//   ===================================================================================================
-
 // popup modal js start
 const downloadBtns = document.querySelectorAll(".download-btn");
 const popupModal = document.getElementById("popup-modal");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overlay");
-const password = "poleyarpass";
+const password = "ellenpass";
 
 // Функция для показа окна
 const showModal = () => {
@@ -138,8 +102,8 @@ $("#form-pdf").submit(function (e) {
     $("#error-message").css("display", "none");
     $("#password-pdf").val(""); // Очистка инпута
     var link = document.createElement("a");
-    link.href = "/Полеяр Агро Молекулы-komprimiert.pdf";
-    link.download = "/Полеяр Агро Молекулы-komprimiert.pdf";
+    link.href = "/ellen Agro Presentation-Molecules-komprimiert.pdf";
+    link.download = "/ellen Agro Presentation-Molecules-komprimiert.pdf";
     link.dispatchEvent(new MouseEvent("click"));
   } else {
     $("#error-message").css("display", "block");
