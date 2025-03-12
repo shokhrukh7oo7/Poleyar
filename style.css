@@ -194,9 +194,9 @@ body {
   color: var(--light-green);
   margin: 0;
 }
-.content-wrapper .container {
+/* .content-wrapper .container {
   padding: 50px 50px 20px;
-}
+} */
 .desc .content-description .btn {
   display: none;
   color: var(--green);
@@ -209,7 +209,7 @@ body {
   background-color: var(--white);
 }
 .copirate-wrapper .container {
-  padding: 0 50px;
+  padding: 0;
 }
 .copyrite {
   color: var(--white);
@@ -573,7 +573,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    padding: 16px !important;
+    padding: 16px 16px 50px !important;
   }
   .copyrite {
     text-align: center;
