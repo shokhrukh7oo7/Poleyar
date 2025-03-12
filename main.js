@@ -80,14 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //   ===================================================================================================
 document.addEventListener("DOMContentLoaded", function () {
-  gsap.set("#content-box", { visibility: "visible" }); // Делаем контент видимым
-  gsap.from("#content-box", {
-    scale: 0.8, // Появление сдвигом вверх
-    duration: 1.2,
-    ease: "power3.out"
+  gsap.from("#content-wrapper", {
+      opacity: 0,
+      scale: 0.95,
+      duration: 1.2,
+      ease: "power2.out"
   });
 });
-
 
 //   ===================================================================================================
 // download btn password in popup modal
