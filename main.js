@@ -82,9 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
   gsap.from("#content-wrapper", {
       opacity: 0,
-      scale: 0.95,
-      duration: 1.2,
-      ease: "power2.out"
+      scale: 1,
+      duration: 1.5,
+      ease: "power3.out"
   });
 });
 
