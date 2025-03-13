@@ -95,7 +95,7 @@ $("#form-pdf").submit(function (e) {
   e.preventDefault();
   let pass = $("#password-pdf").val();
   if (pass === password) {
-    $("#form-download-btn").html("Скачано");
+    $("#form-download-btn").html("DOWNLOADED");
     // $("#group-input").css("display", "none");
     $("#password-pdf").removeClass("border-red");
     $("#error-message").css("display", "none");
