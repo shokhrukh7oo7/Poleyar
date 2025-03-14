@@ -591,6 +591,9 @@ body {
   .desc .content-description .title {
     font-size: 16px;
   }
+  .copyrite {
+    position: relative;
+  }
   .main-container-wrapper .content-wrapper {
     flex-direction: column;
   }
@@ -654,6 +657,9 @@ body {
   }
   .desc .percent-wrapper .item .percent {
     font-size: 32px;
+  }
+  .desc .percent-wrapper .item .item-box {
+    flex-direction: column;
   }
   .main-container-wrapper
     .content-wrapper
