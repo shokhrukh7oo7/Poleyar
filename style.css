@@ -76,6 +76,9 @@ body {
     #005c52 100%
   );
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-container-wrapper .logo-wrapper {
@@ -256,7 +259,7 @@ body {
 
 .banner-wrapper img {
   width: 100%;
-  max-width: 655px;
+  max-width: 755px;
 }
 
 .popup-modal {
@@ -477,7 +480,6 @@ body {
   }
   .item-box {
     display: flex;
-    gap: 10px;
   }
   .desc h1 {
     font-size: 32px;
