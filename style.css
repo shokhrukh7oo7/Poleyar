@@ -78,7 +78,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .main-container-wrapper .logo-wrapper {
@@ -464,7 +464,13 @@ body {
 }
 
 /* responsive media */
-@media (max-width: 1700px) {
+@media (max-width: 1746px) {
+  .content-wrapper .container {
+    padding: 0 50px 50px 50px;
+  }
+  .copirate-wrapper .container {
+    padding: 0 50px;
+  }
   .main-container-wrapper
     .content-wrapper
     .content-left-wrapper
@@ -478,24 +484,21 @@ body {
   .container {
     padding: 30px;
   }
-  /* .item-box {
-    display: flex;
-  }*/
+  .content-wrapper .container {
+    padding: 0 30px 30px 30px;
+  }
   .desc h1 {
-    font-size: 28px;
-    margin: 0;
-    width: 100%;
-    max-width: 400px;
+    font-size: 55px;
   } 
   .desc .content-description {
     margin: 18px 0;
   }
   .desc .content-description .title {
-    font-size: 14px;
+    font-size: 17px;
     max-width: 700px;
   }
   .desc .percent-wrapper .item .percent {
-    font-size: 30px;
+    font-size: 47px;
   }
   .main-percent-header {
     margin-bottom: 5px;
