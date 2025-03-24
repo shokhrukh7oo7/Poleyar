@@ -3,7 +3,7 @@ const downloadBtns = document.querySelectorAll(".download-btn");
 const popupModal = document.getElementById("popup-modal");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overlay");
-const password = "ellenpass";
+const password = "MotherNature";
 
 // Функция для показа окна
 const showModal = () => {
@@ -81,10 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
 //   ===================================================================================================
 document.addEventListener("DOMContentLoaded", function () {
   gsap.from("#content-wrapper", {
-      opacity: 0,
-      scale: 1,
-      duration: 1.5,
-      ease: "power3.out"
+    opacity: 0,
+    scale: 1,
+    duration: 1.5,
+    ease: "power3.out",
   });
 });
 
@@ -101,8 +101,8 @@ $("#form-pdf").submit(function (e) {
     $("#error-message").css("display", "none");
     $("#password-pdf").val(""); // Очистка инпута
     var link = document.createElement("a");
-    link.href = "/ellen Agro Presentation-Molecules-komprimiert.pdf";
-    link.download = "/ellen Agro Presentation-Molecules-komprimiert.pdf";
+    link.href = "/Ellen Presentation.pdf";
+    link.download = "/Ellen Presentation.pdf";
     link.dispatchEvent(new MouseEvent("click"));
   } else {
     $("#error-message").css("display", "block");
